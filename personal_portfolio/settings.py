@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost','.vercel.app']
 
 INSTALLED_APPS = [
     "pages.apps.PagesConfig",
+    ""
     "projects.apps.ProjectsConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -120,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
-STATICFILES_DIRS = [BASE_DIR / "static"]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

@@ -33,8 +33,6 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost','.vercel.app']
 
 INSTALLED_APPS = [
     "pages.apps.PagesConfig",
-    "pages",
-    "projects",
     "projects.apps.ProjectsConfig",
     "django.contrib.admin",
     "django.contrib.auth",

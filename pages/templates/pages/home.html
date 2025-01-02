@@ -1,0 +1,31 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block page_content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="display-4 text-center">Welcome to My Portfolio!</h1>
+            <hr class="my-4">
+            <h2 class="text-justify">Introduction</h2>
+            <p class="lead text-justify">My name is Siu Yau Shing (蕭佑丞), also known as Shiloh.</p>
+            <p class="lead text-justify">
+                I am currently studying at The Hong Kong Polytechnic University, pursuing a 
+                <a href="https://www.polyu.edu.hk/dsai/study/ug/bsc-in-fintech-and-ai-62435-fft/" target="_blank">BSc (Hons) in Financial Technology and Artificial Intelligence</a> 
+                with a  Minor in Applied Psychology.
+            </p>
+            <p class="lead text-justify">Expected Graduation: September 2027</p>
+            <hr class="my-4">
+            <h2 class="text-justify">Skills</h2>
+            <p class="text-justify"><strong>Programming Languages:</strong> HTML, CSS, Python (Pytorch, Tensorflow, Django), C++, SQL, Java</p>
+            <p class="text-justify"><strong>Office Tools:</strong> Microsoft Office (Word, Excel, PowerPoint, Access)</p>
+            <p class="text-justify"><strong>Languages:</strong> Cantonese (Native), English (Native), Mandarin (Fluent)</p>
+            <p class="text-justify"><strong>Developer Tools:</strong> Docker, Git, Pycharm, VScode, IntelliJ IDEA</p>
+            <div class="text-center">
+                <a href="{% url 'project_index' %}" class="btn btn-primary mt-3">Go to My Projects</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock page_content %}

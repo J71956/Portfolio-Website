@@ -1,0 +1,60 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}My Personal Portfolio{% endblock title %}</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+    <style>
+        body {
+            background-color: #ffffff; /* White background */
+            color: #000000; /* Black text */
+            padding-top: 56px;
+        }
+        .navbar {
+            background-color: #343a40; /* Dark grey navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important; /* White text for navbar items */
+        }
+        .content-wrapper {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top w-100">
+        <div class="container">
+            <a class="navbar-brand" href="/">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="content-wrapper container">
+        {% block page_content %}{% endblock page_content %}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
